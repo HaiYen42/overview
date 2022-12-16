@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let second= prompt("Vui lòng nhập số giây")
+        let hour= parseInt(second/3600)
+        let a   =  (second%3600);
+        let min = parseInt(a/60);
+        let second2=(a%60);
+        console.log(hour+ " giờ "+ min + " phút "+ second2+ " giây " );
+    </script>
+</body>
+</html>

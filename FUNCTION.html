@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      // Loại 1: Declaration function, Đặt tên hàm theo cú pháp CamelCase- Bắt đầu bằng động từ
+        // function sum(){
+        //     console.log("Hello học viên RA !");
+        // }
+        // sum(); //Muốn hàm chạy được thì phải gọi hàm
+     //  Loại 2: expresstion function
+            // let result= function(params){
+
+            //     console.log("Hello học viên RA 10 !");
+            // }
+            // result(); // Ko có hoisting
+    // Loại 3: arrow function() - Hàm mũi tên
+           
+    // Return trong hàm -> là kết quả trả về của hàm và thoát khỏi hàm (break là thoát khỏi vòng lặp)
+//    let result= function test(a,b){
+//         // console.log("1");
+//         return a+b;
+//     }
+//    console.log(result(4,5));
+
+// Tham số và đối số trong hàm
+
+// function test(a,b){ // a,b là tham số nhận vào của hàm
+// console.log("a",a);
+// console.log("b",b);
+// }
+// test(4,8)// 4 và 8 là đối số truyền vào hàm
+// test("Hello","Học viên Java10");
+
+//Bước 1: Viết 1 hàm kiểm tra số nguyên tố
+//  Nếu đúng là số nguyên tố thì return true;
+//  Nếu ko phải là số nguyên tố thì retunrn false 
+
+// function test(){
+// for (const key of arguments){
+//     console.log(key);
+// }
+// }
+// test (1,2,3,4,5,6,7,8,9)
+
+// IIFE dùng để đóng gói các thư viện- nếu function trùng tên thì ko liên quan đến nhau.
+(function test(){
+    console.log("1");
+})();
+
+</script>
+
+</body>
+</html>

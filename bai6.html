@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  Kiểm tra năm nhuận
+        let year = parseInt(prompt("Vui lòng nhập năm")) 
+        let month= prompt("Vui lòng nhập tháng")
+        if(month==1||month==3||month==5||month==8||month==10||month==12){
+            console.log("Tháng "+ month+ " có 31 ngày");
+        } else if(month==4||month==6||month==9){
+            console.log("Tháng "+ month+ "có 30 ngày");
+        } else{
+            if (year % 4 ==0 && year % 100 !=0){
+            console.log("Năm "+ year +" là năm nhuận");
+            console.log("Tháng có 29 ngày");
+            } else if(year %100==0 && year %400 !==0){
+            console.log("Năm " + year + " ko là năm nhuận");
+            console.log("Tháng có 28 ngày");
+            } 
+            else if(year %100==0 && year %400 ==0){
+            console.log("Năm " + year + " là năm nhuận");
+            console.log("Tháng có 29 ngày");
+            }
+            else{
+                console.log("Năm " + year + " ko phải là năm nhuận");
+                console.log("Tháng có 28 ngày");
+                    }
+        }
+        
+       
+    </script>
+</body>
+</html>

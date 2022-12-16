@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="detail-image" id="image">
+            <!-- <img id="image" src="./img/img1.jpg" alt=""> -->
+        </div>
+    </div>
+</body>
+<script>
+    // let arrayImages= ["img/img1.jpg","img/img2.jpg","img/img3.jpg","img/img4.png"];
+    // localStorage.setItem("arrayImages",JSON.stringify(arrayImages));
+    let count=0;
+    function showBanner(){
+        let listImages= JSON.parse(localStorage.getItem("arrayImages"));
+        // console.log("chạy");
+        data = `<img id="image" src="${listImages[count]}" alt="">
+        `
+        count++;
+        if(count==4){
+            count=0;
+        }
+        document.getElementById('image').innerHTML = data;
+    }
+    setInterval(showBanner,1000);
+</script>
+</html>

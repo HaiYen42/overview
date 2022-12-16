@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let num= parseInt(prompt("Vui lòng nhập số cần kiểm tra"));
+          let total =0;
+          let checkNum;
+          let j=2;
+          let dem=0;
+
+    function checkPrime (num){
+        let flag=true;
+        if(num==2){
+            flag=true;
+        } else{
+            for (let i = 2; i < num; i++) {
+            checkNum = num % i;
+            if(checkNum==0){
+                flag=false;
+                break;
+            }          
+        }
+            if(checkNum !=0){
+                flag=true;
+            }    
+        }
+        return flag;
+    }
+
+    // for (let j = 2; j < num; j++) {
+    //     if(checkPrime (j)==true){
+    //         console.log(j,"là số nguyên tố");
+    //     }
+    // }
+
+ while (dem<num) {
+    if(checkPrime(j)==true){
+        console.log(j,"là số nguyên tố thứ", dem+1);
+        dem++;
+    } 
+    j++;
+
+ }
+
+    </script>
+</body>
+</html>

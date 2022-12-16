@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let oldNum= parseInt(prompt("Vui lòng nhập số điện tiêu thụ cũ"));
+        let newNum=parseInt(prompt("Vui lòng nhập số điện tiêu thụ mới"));
+        let consump= newNum-oldNum;
+        let pay;
+        let subFee= 10000; //Khai báo hằng số là số tiền thuê bao
+        console.log("Số điện tiêu thụ là "+ consump + " số điện");
+
+        if(consump<=50){
+            pay=consump*700 + subFee;
+        }else if(consump<=100){
+            pay= 50*700+ (consump-50)*900 + subFee;
+        }else if(consump<=150){
+            pay= 50*700+ (50*900)+(consump-100)*1100 + subFee;
+        }else{
+            pay= 50*700 + 50*900 + 50*1100 +(consump-150)*1300  + subFee ;
+        }
+            console.log("Tổng tiền phải trả là "+ pay+ " đồng"); 
+    </script>
+</body>
+</html>

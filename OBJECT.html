@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+    /*
+    name, age, address: được gọi là thuộc tính của đối tượng (property);
+    talk: được gọi là phương thức của đối tượng;
+    CRUD:
+    C: Create
+    R: Read
+    U: Update
+    D: Delete
+
+    */
+        // let array=[4,5,6,7,8,9];
+        // for (const key in array) { //for in -> index
+        //    console.log("key",key);
+        // }
+
+        let person1 ={
+            name: "Hải Yến",
+            age: "18",
+            address: {
+                    district: "My Dinh",
+                    stress:" Tran Binh",
+            },
+            talk: function(){
+                console.log("hello");
+            },
+        }
+    //Creat: Thêm mới 1 thuộc tính
+    //     person.id=1;
+    //     console.log(person);
+    //Read: 
+    // for (const key in person) { //for in -> in ra các thuộc tính 
+    //     console.log(key); // In ra các thuộc tính
+    //     // console.log(person[key]); // In ra các value của thuộc tính
+       
+    // }
+    // Update:
+    //  person.age="20";
+    //  console.log(person);
+
+    //Delete
+    // delete person.address;
+    // console.log(person);
+    //Spread dạng shallow clone
+    // let person2={...person}
+    // person.age="20";
+    // console.log(person2);
+    // person1.address.district="My Tho";
+    // console.log(person2);
+    // let person2=Object.assign({},person1);
+    // person1.address.stress="Hoa Binh";
+    // console.log(person2);
+    // Deep clone
+    // let person2=JSON.parse(JSON.stringify(person1));
+    // person1.address.district="Ba Đình";
+
+    // console.log(person1);
+    // console.log(person2);
+   
+    function User(fistName, lastName,age) {
+        this.fistName=fistName;
+        this.lastName=lastName;
+        this.age=age;
+    }
+    let mimi = new User("Dương", "Phạm Tùng", "15");
+    let ngocThu = new User("Thu", "Trương Minh","18");
+    console.log(mimi);
+    console.log(ngocThu);
+    // new Date, Set
+    // let array=[1,1,1,5,5,8,8,9,1,1,1,,5,5,5];
+    // let result= new Set(array);                 // new Set: Bỏ những phần tử trùng nhau trong mảng
+    // console.log("result",result);
+
+    let date= new Date();
+    console.log(date.getDate());
+    console.log(date.getFullYear());
+    console.log(date.getMonth()+1);
+    
+    </script>
+</body>
+</html>

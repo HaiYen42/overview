@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* CRUD
+        C: Creat
+        R: Read
+        U: Update
+        D: Delete
+       */
+    //   let listNumber = [1,2,3,6,4,7];
+      //Creat
+    //   listNumber.push(9); //Push thêm phần tử vào vị trí cuối của mảng.
+    //   console.log("listNumber", listNumber);
+    //   listNumber.unshift(0); //Thêm vào vị trí đầu của mảng.
+      //Read - Đọc - Sử dụng vòng lặp for
+        // for (let i = 0; i < listNumber.length; i++) {
+        //    console.log("listNumber", listNumber[i]);
+            
+        // }
+        // Update 
+        // listNumber[4]=9;
+        // console.log(listNumber);
+        //  Delete - vị trí xóa(1)- số phần tử muốn xóa (2) - thêm phần tử khác vào vị trí muốn xóa (3)
+        //  splice - tác động trực tiếp mảng ban đầu
+        // listNumber.splice(3,1,8)
+        // console.log(listNumber);
+        // slice bản chất là sao chép sang 1 mảng mới - ko liên quan đến mảng cũ
+        // listNumber.slice(2,4)- Bắt đầu từ vị trí thứ 2- kết thúc ở vị trí t4 ko lấy index4-> mảng mới [index2, index3]
+        //    console.log(listNumber.slice(2,4)); 
+        //    console.log(listNumber);
+        // Các method làm việc với array
+        // FILTER : 
+        // let listNumber = [1,2,3,6,4,7];
+        // listNumber.filter((value,index,array)=>{
+        //     // console.log("value",value);
+        //     // console.log("index",index);
+        //     // console.log("array",array);
+        //     // In tất cả các phần tử chẵn trong mảng ra
+        //     if(value%2==0){
+        //         console.log("value",value);
+        //         console.log("index",index);
+        //     }
+        // })
+        //MAP :
+        // listNumber.map((value,index,array)=>{
+        //     //  console.log("value",value);
+        //     // console.log("index",index);
+        //     console.log("array",array);
+        // })
+        // MAP: Số phần tử ko thay đổi
+        // FILTER: Số phần tử có thay đổi khi lọc
+
+        // FOREACH
+        // let sum=0;
+        // listNumber.forEach((value,index,array)=>{
+        //     sum+=value;
+
+        //     // console.log(value);
+        //     // console.log("index",index);
+        //     // console.log(array);
+        // })
+        // console.log("sum",sum);
+
+        // CALL BACK- hàm được truyền vào làm tham số của hàm khác.
+        // Ví dụ về Call Back;
+        // function hello(callback){
+        //     console.log(callback);
+        // }
+        // hello(test)
+        // function test(){
+        //     console.log("hello học viên java 10");
+        // }
+        let array=[1,5,8,9,7];
+
+        let result=array.splice(1,3);
+
+        console.log(result)
+
+
+    </script>
+</body>
+</html>
